@@ -32,3 +32,14 @@ python people_counting_pipeline.py
 # With video file
 VIDEO_SOURCE="videos/(examplevideo.mp4)" python people_counting_pipeline.py
 ```
+
+### 4. Subscribe to the pipeline messages 
+
+Subscribing to all the pipeline messages
+```bash
+mosquitto_sub -t "DAKRI/MAURITIUS/+/+/PEOPLE_COUNTING" -h localhost
+```
+Subscribing to the health messages 
+```bash
+mosquitto_sub -t "DAKRI/MAURITIUS/+/+/HEALTH/PEOPLE_COUNTING" -h localhost
+```
