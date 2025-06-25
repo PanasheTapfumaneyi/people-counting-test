@@ -7,9 +7,7 @@ cd people-counting-test
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\\Scripts\\activate  # Windows
+venv\\Scripts\\activate 
 
 # Install dependencies
 pip install -r requirements.txt
@@ -26,11 +24,10 @@ docker run -it -p 1883:1883 eclipse-mosquitto
 ### 3. Run the Pipeline
 
 ```bash
-# Basic usage with webcam
 python people_counting_pipeline.py
 
-# With video file
-VIDEO_SOURCE="videos/(examplevideo.mp4)" python people_counting_pipeline.py
+# Update video file if needed
+Line 757:  video_source="videos/footage.mp4"
 ```
 
 ### 4. Subscribe to the pipeline messages 
