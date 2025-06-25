@@ -1,0 +1,6 @@
+opencv-python>=4.5.5.64
+opencv-contrib-python>=4.5.5.64
+numpy>=1.21.0
+paho-mqtt>=1.6.1
+scipy>=1.7.0
+asyncio>=3.4.3
